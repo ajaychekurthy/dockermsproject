@@ -2,13 +2,13 @@
 version: "3.8"
 services:
   movies:
-    image: ajaychekurthy/paytmrechargerepo:latest
+    image: ajaychekurthy/paytmmoviesrepo:latest
     ports:
       - 91:80
     deploy:
       replicas: 3
   train:
-    image: ajaychekurthy/paytmrechargerepo:latest
+    image: ajaychekurthy/paytmtrainrepo:latest
     ports:
       - 92:80
     deploy:
@@ -20,7 +20,7 @@ services:
     deploy:
       replicas: 3
   dth:
-    image: ajaychekurthy/paytmrechargerepo:latest
+    image: ajaychekurthy/paytmdthrepo:latest
     ports:
       - 94:80
     deploy:
